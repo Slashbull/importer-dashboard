@@ -1,0 +1,62 @@
+importer-dashboard/
+│
+├── assets/                              # Static files (e.g., images, icons)
+│   ├── logo.png
+│   ├── icons/
+│       └── filter-icon.png
+│
+├── config/                              # Configuration files
+│   ├── settings.py                      # Dashboard settings (e.g., default filters, KPIs)
+│   └── security.py                      # Data security (encryption, access control)
+│
+├── data/                                # Data folder
+│   ├── raw_data/                        # Raw data uploads (CSV, Excel, Google Sheets links)
+│   ├── processed_data/                  # Cleaned data (normalized, validated)
+│   └── temp/                            # Temporary files (e.g., for testing or intermediate processing)
+│
+├── docs/                                # Documentation files
+│   ├── user_guide.md                    # End user guide (how to use dashboard)
+│   └── api_guide.md                     # API documentation (if any for integrations)
+│
+├── notebooks/                           # Jupyter Notebooks for exploratory analysis and testing
+│   ├── anomaly_detection.ipynb          # Testing anomaly detection models
+│   ├── data_analysis.ipynb              # Initial data analysis
+│   └── forecasting.ipynb                # Moving average and trend forecasting models
+│
+├── src/                                 # Source code
+│   ├── __init__.py
+│   ├── anomaly_detection/               # Submodule for anomaly detection
+│   │   ├── z_score.py                   # Z-score based anomaly detection
+│   │   ├── isolation_forest.py          # Isolation Forest model
+│   │   └── dynamic_threshold.py         # Dynamic threshold anomaly detection
+│   ├── competitor_supplier_analysis/    # Submodule for competitor-supplier analysis
+│   │   ├── competitor_performance.py    # Competitor performance tracking
+│   │   └── supplier_performance.py      # Supplier performance tracking and risk assessment
+│   ├── data_processing/                 # Submodule for data cleaning and validation
+│   │   ├── data_validation.py           # Ensuring data consistency
+│   │   └── data_normalization.py        # Normalizing data across different sources
+│   ├── forecasting/                     # Submodule for forecasting
+│   │   ├── moving_average.py            # Moving average forecasting
+│   │   └── exponential_smoothing.py     # Exponential smoothing model
+│   ├── reporting/                       # Submodule for dynamic report generation
+│   │   ├── report_generator.py          # Report generation (CSV, PDF, Excel)
+│   │   └── template.py                  # Report templates
+│   ├── ui/                              # UI Components (Streamlit app or frontend code)
+│   │   ├── dashboard.py                 # Main dashboard interface
+│   │   ├── product_insights_dashboard.py # Product Insights Dashboard (performance per product type)
+│   │   ├── trend_forecasting_dashboard.py# Trend Forecasting Dashboard (moving averages, seasonality)
+│   │   ├── supply_chain_insights_dashboard.py # Supply Chain Insights Dashboard (supplier, competitor, performance)
+│   │   ├── filters.py                   # Dynamic filter components
+│   │   └── charts.py                    # Data visualizations (charts, heatmaps)
+│   ├── user_authentication/             # Submodule for user authentication and roles
+│   │   ├── login.py                     # Login page (with encryption)
+│   │   └── user_roles.py                # User roles and permissions
+│   ├── utils/                           # Utility functions (e.g., data handling, alerts)
+│   │   ├── alerts.py                    # Smart alert system (critical, warning, informational)
+│   │   └── unit_conversion.py           # Unit conversion (kgs to tons)
+│   └── main.py                          # Main entry point for the app or API
+│
+├── requirements.txt                    # Python dependencies (e.g., pandas, numpy, streamlit)
+├── README.md                            # Overview of the project
+├── .gitignore                           # Git ignore rules (e.g., for temporary files)
+└── LICENSE                              # Project license
