@@ -1,0 +1,10 @@
+# Python Bytecode files
+__pycache__/
+
+# Temporary files
+*.log
+*.csv
+*.xlsx
+
+# Virtual Environment
+venv/
